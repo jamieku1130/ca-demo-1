@@ -8,15 +8,20 @@ class Logo extends Component {
 
   componentDidMount() {
     this.tl
-      .staggerFrom(this.sails, 1, { x: -10, opacity: 0 }, 0.5)
-      .from(this.logoText, 1, { opacity: 0 }, 1)
+      .staggerFrom(
+        this.sails,
+        1,
+        { x: -10, opacity: 0, scale: 0.5, transformOrigin: "50% 50%" },
+        0.5
+      )
+      .from(this.logoText, 1, { opacity: 0 })
       .play();
   }
 
   render() {
     return (
       <>
-        <svg width="120" height="40" viewBox="0 0 210 69">
+        <svg width="120" height="60" viewBox="0 0 180 40">
           <g
             transform="translate(-7.764 -14.132)"
             fill="#dca25e"

@@ -11,6 +11,10 @@ export const setColor = {
   lightGray: "#f9f9f9"
 };
 
+export const setFont = {
+  header: `font-family: 'Quattrocento', serif;`
+};
+
 export const setFlex = ({ x = "center", y = "center" } = {}) => {
   return `display:flex;align-items:${y};justify-content:${x}`;
 };

@@ -1,6 +1,7 @@
 import { css } from "@emotion/core";
 
 const globalStyle = css`
+  @import url("https://fonts.googleapis.com/css?family=Quattrocento:400,700");
   *,
   ::after,
   ::before {
