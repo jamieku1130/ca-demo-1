@@ -7,21 +7,11 @@ const Triangle = styled.svg`
   background: ${props => props.bgColor};
   fill: ${props => props.fillColor};
   width: 100%;
-  height: 150px;
+  height: 100px;
   ${media.tablet`
-    height:100px;
+    height:60px;
   `}
 `;
-
-// const triangle = css`
-//   background: ${props => props.bgColor};
-//   fill: ${props => props.fillColor};
-//   width: 100%;
-//   height: 150px;
-//   ${media.tablet`
-//     height:100px;
-//   `}
-// `;
 
 export default ({ bgColor, fillColor }) => {
   return (

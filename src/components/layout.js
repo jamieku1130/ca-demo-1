@@ -6,7 +6,7 @@ import useSiteMetadata from "../hook/use-sitemetadata";
 import Triangle from "./global/triangle";
 import About from "./about";
 import { setColor } from "../utils/style";
-const { darkBlack, lightBlack } = setColor;
+const { darkBlack, lightBlack, mainGray, darkGray } = setColor;
 
 export default () => {
   const siteMetadata = useSiteMetadata();
@@ -16,6 +16,7 @@ export default () => {
       <Header siteMetadata={siteMetadata} />
       <Triangle bgColor={lightBlack} fillColor={darkBlack} />
       <About />
+      <Triangle bgColor={mainGray} fillColor={darkGray} />
     </div>
   );
 };
